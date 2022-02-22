@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Assignment</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+
+<style>
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+  /*
+  # Navigation Menu
+  */
+  .nav-back{
+      background: rgba(17, 219, 207,0.8);
+      color: #fff;
+  }
+  .navbar-brand{
+    color: #000;
+  }
+  .navbar-brand:hover{
+    color: #fff;
+  }
+  .nav-link{
+    color: #000;
+  }
+  .nav-link:hover{
+    color:#fff;
+  }
+  .navbar-toggler{
+    outline: none!important;
+  }
+  
+     
+   
+  /*
+  # Hero Section
+  */
+  #hero {
+      width: 100%;
+      height: 80vh;
+      background: url("./images/hero.jpg") center center;
+      background-size: cover;
+      position: relative;
+    }
+    
+    #hero .container {
+      padding-top: 80px;
+    }
+    
+    #hero:before {
+      content: "";
+      background: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+    
+    #hero h1 {
+      margin: 0 0 10px 0;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 56px;
+      color: #fff;
+    }
+    
+    #hero h2 {
+      color: #eee;
+      margin-bottom: 40px;
+      font-size: 15px;
+      font-weight: 500;
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    
+    .main-btn {
+      font-family: "Poppins", sans-serif;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
+      display: inline-block;
+      padding: 8px 28px;
+      border-radius: 50px;
+      transition: 0.5s;
+      margin: 10px;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+    
+     .main-btn:hover {
+      background: #11dbcf;
+      border: 2px solid #11dbcf;
+      text-decoration: none;
+      color:#fff;
+    }
+   .form-group .btn-form{
+    background: #11dbcf;
+    border: 2px solid #11dbcf;
+    text-decoration: none;
+    color:#000;
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    .footer {
+        text-align: center;
+        font-size: 0.9rem;
+        background:rgba(17, 219, 207,0.8);
+      }
+      .footer .btn-back{
+        background: #fff;
+        color: #00d9ff;
+      }
+      .footer .text{
+        color: #000;
+      }
+      
+   </style>   
+
+  <body>
+    <nav class="navbar navbar-expand-lg nav-back fixed-top" 
+    id="mainNav">
+      <div class="container">
+          <a class="navbar-brand" href="#">Medical</a>
+          <button class="navbar-toggler navbar-toggler-right" type="button"
+           data-toggle="collapse" data-target="#navbarResponsive" 
+           aria-controls="navbarResponsive" aria-expanded="false" 
+           aria-label="Toggle navigation"><i class="fas fa-syringe fa-2x"></i>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" 
+                  href="#about">Services</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#about">Medical Camps</a></li>
+                  <li class="nav-item"><a class="nav-link"
+                     href="#projects">Team</a></li>
+                  <li class="nav-item"><a class="nav-link" 
+                    href="#signup">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+   
+<!-- End Header -->    
+   
+  <div class="container mt-4 p-4">
+      <div class="row">
+          <div class="col-md-6">
+              <h2 class="text-center my-4">
+                  Appointment Booking
+              </h2>
+              <form>
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-lg-4">
+                          Patient Name
+                      </label>
+                      <div class="col-sm-8 col-lg-8">
+                          <input type="text"id="patient-name"class="form-control"
+                          placeholder="Enetr FullName"required>
+                      </div>
+                  </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Contact
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="tel"id="contact"class="form-control"
+                        placeholder="enter number"required>
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                      Date
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="date"id="date"class="form-control">
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Time
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input type="time"id="time"class="form-control">
+                       </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Symptoms
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <textarea id="symptoms" class="form-control" required></textarea>
+                    </div>
+                </div>
+				 <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Doctor&Speciality
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                       <select id="doctors" class="form-control" required>
+                          <option>Dr.M.RAO,GENERAL DOCTOR</option>
+                          <option>Dr.D.DINESH,CARDIOLOGIST</option>
+                          <option>Dr.S.LAXMI,DERMATOLOGY</option>
+                          <option>Dr.K.SRIKANTH,SURGERY</option>
+						  <option>Dr.R.SIRI,OPHTHALMOLOGY</option>
+                       </select>
+                    </div>
+                </div>
+				 <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Cost
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                       <select id="cost" class="form-control" required>
+                          <option>250/-</option>
+                          <option>500/-</option>
+                          
+                       </select>
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row justify-content-end">
+                    <div class="col-sm-5">
+                        <button type="submit"class="btn btn-form">
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+
+              </form>
+          </div>
+          <div class="col-md-6">
+              <h2 id="services" class="text-center my-4"></h2>
+              <ul id="consultations"class="list-group"></ul>
+          </div>
+      </div>
+  </div>
+
+
+
+  <!-- Footer-->
+  <footer class="footer py-4 mt-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-left">Copyright©Your Website 2022</div>
+           
+            <div class="col-lg-4 text-lg-right">
+              <a class="mr-3 text" href="#!">Privacy Policy</a>
+              <a href="#!"class="text">Terms of Use</a></div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+      <script>
+	  let DB;
+
+let form = document.querySelector('form');
+let patientName = document.querySelector('#patient-name');
+let contact = document.querySelector('#contact');
+let date = document.querySelector('#date');
+let time = document.querySelector('#time');
+let symptoms = document.querySelector('#symptoms');
+let doctors = document.querySelector('#doctors');
+let cost = document.querySelector('#cost');
+let consultations = document.querySelector('#consultations');
+let services = document.querySelector('#services');
+
+document.addEventListener('DOMContentLoaded', () => {
+     // create the database
+     let ScheduleDB = window.indexedDB.open('consultations', 1);
+
+     // if there's an error
+     ScheduleDB.onerror = function() {
+          console.log('error');
+     }
+     // if everything is fine, assign the result is to the (letDB) instance 
+     ScheduleDB.onsuccess = function() {
+          // console.log('Database Ready');
+
+          
+          DB = ScheduleDB.result;
+
+          showConsultations();
+     }
+
+   
+     ScheduleDB.onupgradeneeded = function(e) {
+          
+          let db = e.target.result;
+          
+          let objectStore = db.createObjectStore('consultations', { keyPath: 'key', autoIncrement: true } );
+
+        
+          objectStore.createIndex('patientname', 'patientname', { unique: false } );
+          objectStore.createIndex('contact', 'contact', { unique: false } );
+          objectStore.createIndex('date', 'date', { unique: false } );
+          objectStore.createIndex('time', 'time', { unique: false } );
+          objectStore.createIndex('symptoms', 'symptoms', { unique: false } );
+		  objectStore.createIndex('doctors', 'doctors', { unique: false } );
+		  objectStore.createIndex('cost', 'cost', { unique: false } );
+
+          //console.log('Database ready and fields created!');
+     }
+
+     form.addEventListener('submit', addConsultations);
+
+     function addConsultations(e) {
+          e.preventDefault();
+          let newConsultation = {
+               patientname : patientName.value,
+               
+             contact : contact.value,
+               date : date.value,
+            time : time.value,
+               symptoms : symptoms.value,
+				 doctors : doctors.value,
+				 cost : cost.value
+          }
+          
+          let transaction = DB.transaction(['consultations'], 'readwrite');
+          let objectStore = transaction.objectStore('consultations');
+
+          let request = objectStore.add(newConsultation);
+                    request.onsuccess = () => {
+               form.reset();
+          }
+          transaction.oncomplete = () => {
+               //console.log('New schedule added');
+
+               showConsultations();
+          }
+          transaction.onerror = () => {
+              //console.log();
+          }
+
+     }
+     function showConsultations() {
+       
+          while(consultations.firstChild) {
+            consultations.removeChild(consultations.firstChild);
+          }
+         
+          let objectStore = DB.transaction('consultations').objectStore('consultations');
+
+          objectStore.openCursor().onsuccess = function(e) {
+               
+               let cursor = e.target.result;
+               if(cursor) {
+                    let ConsultationHTML = document.createElement('li');
+                    ConsultationHTML.setAttribute('data-consultation-id', cursor.value.key);
+                    ConsultationHTML.classList.add('list-group-item');
+                    
+                 
+                    ConsultationHTML.innerHTML = `  
+                         <p class="font-weight-bold">Patient Name:  <span class="font-weight-normal">${cursor.value.patientname}<span></p>
+                          <p class="font-weight-bold">Contact:  <span class="font-weight-normal">${cursor.value.contact}<span></p>
+                         <p class="font-weight-bold">Date:  <span class="font-weight-normal">${cursor.value.date}<span></p>
+                         <p class="font-weight-bold">Time:  <span class="font-weight-normal">${cursor.value.time}<span></p>
+                         <p class="font-weight-bold">Symptoms:  <span class="font-weight-normal">${cursor.value.symptoms}<span></p>
+						 <p class="font-weight-bold">Doctors&Spaciality:  <span class="font-weight-normal">${cursor.value.doctors}<span></p>
+						<p class="font-weight-bold">Cost:  <span class="font-weight-normal">${cursor.value.doctors}<span></p>
+                    `;
+
+                    
+                    const cancelBtn = document.createElement('button');
+                    cancelBtn.classList.add('btn', 'btn-danger');
+                    cancelBtn.innerHTML = 'OK';
+                    cancelBtn.onclick = removeConsultation;
+               
+                 
+                    ConsultationHTML.appendChild(cancelBtn);
+                 consultations.appendChild(ConsultationHTML);
+
+                    cursor.continue();
+               } else {
+                    if(!consultations.firstChild) {
+                        services.textContent = 'Information';
+                         let noSchedule = document.createElement('p');
+                         noSchedule.classList.add('text-center');
+                         noSchedule.textContent = 'No results Found';
+                      consultations.appendChild(noSchedule);
+                    } else {
+                        services.textContent = 'Appointment Form'
+                    }
+               }
+          }
+     }
+
+          function removeConsultation(e) {
+       
+          let scheduleID = Number( e.target.parentElement.getAttribute('data-consultation-id') );
+         
+          let transaction = DB.transaction(['consultations'], 'readwrite');
+          let objectStore = transaction.objectStore('consultations');
+         
+          objectStore.delete(scheduleID);
+
+          transaction.oncomplete = () => {
+             
+               e.target.parentElement.parentElement.removeChild( e.target.parentElement );
+
+               if(!consultations.firstChild) {
+                   
+                    services.textContent = 'Appointment Successfully registered';
+                   
+                   let noSchedule = document.createElement('p');
+                  
+                   noSchedule.classList.add('text-center');
+                   
+                   noSchedule.textContent = 'Thank You';
+                
+                    consultations.appendChild(noSchedule);
+               } else {
+                   services.textContent = 'Appointment Form'
+               }
+          }
+     }
+
+});
+	  </script>
+   
+   
+  </body>
+</html>
